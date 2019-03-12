@@ -1,0 +1,51 @@
+{
+  "name": "LastfmRadio",
+  "version": "1.0.0",
+  "description": "description",
+  "private": true,
+  "main": "dist/server.js",
+  "scripts": {
+    "dev": "nodemon ./dist/server",
+    "grunt": "grunt",
+    "watch": "grunt watch",
+    "start": "node ./dist/server",
+    "production": "-u www-data /usr/local/bin/node ./dist/server",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "HxxxxxS",
+  "license": "MIT",
+  "dependencies": {
+    "bcrypt-nodejs": "0.0.3",
+    "body-parser": "^1.18.3",
+    "connect-flash": "^0.1.1",
+    "cookie-parser": "^1.4.4",
+    "express": "^4.16.4",
+    "express-session": "^1.15.6",
+    "lastfm": "^0.9.3",
+    "morgan": "^1.9.1",
+    "passport": "^0.4.0",
+    "passport-lastfm": "^1.0.1",
+    "querystring": "^0.2.0",
+    "request": "^2.88.0",
+    "simple-get": "^3.0.3"
+  },
+  "devDependencies": {
+    "@types/bcrypt-nodejs": "0.0.30",
+    "@types/body-parser": "^1.17.0",
+    "@types/connect-flash": "0.0.34",
+    "@types/cookie-parser": "^1.4.1",
+    "@types/debug": "^4.1.2",
+    "@types/ejs": "^2.6.3",
+    "@types/express": "^4.16.1",
+    "@types/http-errors": "^1.6.1",
+    "@types/morgan": "^1.7.35",
+    "@types/node": "^11.10.5",
+    "@types/passport": "^1.0.0",
+    "ejs": "^2.6.1",
+    "grunt": "^1.0.3",
+    "grunt-contrib-watch": "^1.1.0",
+    "grunt-ts": "^6.0.0-beta.22",
+    "nodemon": "^1.18.10",
+    "typescript": "^3.3.3333"
+  }
+}

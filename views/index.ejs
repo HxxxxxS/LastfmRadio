@@ -1,0 +1,27 @@
+<!DOCTYPE HTML>
+<html class="no-js" lang="no">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>Lightweight last.fm Radio</title>
+    </head>
+    <body>
+        <section class="controls">
+            <img src="//www.last.fm/static/images/defaults/player_default_album.430223706b14.png" alt="" class="artwork">
+            <button class="play"></button>
+            <button class="next"></button>
+            <button class="love"></button>
+            <p class="description">
+                <span class="artist"></span>
+                <span class="track"></span>
+            </p>
+        </section>
+        <section class="login">
+            <% if(user) { %>
+                Scrobbling as <b><%= user.name %></b>
+            <% }else{ %>
+                <a href="/auth/lastfm">Login with lastfm to enable scrobbling</a>
+            <% } %>
+        </section>
+    </body>
+</html>
