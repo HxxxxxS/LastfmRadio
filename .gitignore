@@ -69,10 +69,11 @@ tscommand-*.tmp.txt
 
 # Ignore parsed css files, only track scss files
 public/css/*.css
+!public/css/vendor/*
+
 # Ignore parsed public js files, only track ts files
 public/js/*
 !public/js/*.ts
-!public/js/360
 
 # Scss cache files
 .sass-cache/
