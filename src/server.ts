@@ -16,7 +16,7 @@ const lastfmConfig = require('./config/lastfm')
 require('./app/passport')(passport, lastfmConfig, port); // pass passport for configuration
 
 var Radio = require('./app/radio');
-var radio = new Radio(app);
+var radio = new Radio(app, lastfmConfig);
 
 // set up our express application
 app.use(morgan('dev')); // log every request to the console
@@ -35,7 +35,8 @@ app.use(session({
     name: 'sessiondata',
     cookie: {secure: false},
     resave: false,
-    saveUninitialized: true
+    saveUninitialized: true,
+    maxAge: 1000 * 60 * 60 * 24
 })); // session secret
 app.use(passport.initialize());
 app.use(passport.session()); // persistent login sessions

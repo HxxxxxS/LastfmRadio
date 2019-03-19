@@ -1,0 +1,49 @@
+body{
+    font-family: 'Arial', sans-serif;
+}
+
+.hidden{
+    display:none;
+    visibility: 0;
+}
+
+img.artwork{
+    width:100%;
+}
+
+.container{
+    padding-top:80px;
+}
+
+section.text{
+    text-align:center;
+    p{
+        &.track{
+            margin-bottom: 0.5rem;
+        }
+        &.artist{
+            margin-bottom: 0;
+        }
+        &:after{
+            display: inline-block;
+            content: ' ';
+        }
+    }
+}
+
+section.controls{
+    text-align:center;
+    button{
+        line-height:1.5rem;
+        &.play-pause{
+            .play{
+            }
+            .pause{
+            }
+        }
+        &.next{
+        }
+        &.love{
+        }
+    }
+}
